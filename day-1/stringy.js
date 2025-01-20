@@ -87,8 +87,10 @@ function toUpperCase(string) {
  */
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
-    // Use split method to return string in dash-case
-    return string.split('-');
+    // Initialize variable with string in dash-case
+    var strDash = string.replace(/ /g, '-');
+    // return new string in all lowercase
+    return strDash.toLowerCase()
     // YOUR CODE ABOVE HERE //
 }
 
