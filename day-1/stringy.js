@@ -22,7 +22,7 @@
 
 function length(string) {
     // YOUR CODE BELOW HERE //
-    // initialize a variable with the length of string
+    // return string length
     return string.length;
     
     // YOUR CODE ABOVE HERE //
