@@ -106,9 +106,19 @@ function toDashCase(string) {
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+
+/**
+ * I: A string and a single character
+ * O: return TRUE if string begins with character, false otherwise
+ * C: Function is case insensitive
+ * E: N/A
+ */
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
+    var globalStr = string.toLowerCase()
+    return globalStr.charAt(0) === char 
+    ? true
+    : false
     
 
     // YOUR CODE ABOVE HERE //
