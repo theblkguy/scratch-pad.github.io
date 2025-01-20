@@ -13,11 +13,17 @@
  * work?
  */
 
+/**
+ * I: A string
+ * O: Length of the given string
+ * C: N/A
+ * E: N/A
+ */
 
 function length(string) {
     // YOUR CODE BELOW HERE //
-
-   
+    // initialize a variable with the length of string
+    return string.length;
     
     // YOUR CODE ABOVE HERE //
 }
