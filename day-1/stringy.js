@@ -78,11 +78,17 @@ function toUpperCase(string) {
  *
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
  */
+
+/**
+ * I: A string
+ * O: The given string in dash-case
+ * C: N/A
+ * E: N/A
+ */
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
-
-
-
+    // Use split method to return string in dash-case
+    return string.split('-');
     // YOUR CODE ABOVE HERE //
 }
 
