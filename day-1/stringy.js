@@ -33,10 +33,17 @@ function length(string) {
 /**
  * Given an input String, return a new String forced to lowercase.
  */
+
+/**
+ * I: A string
+ * O: The given string in lowercase
+ * C: N/A
+ * E: N/A
+ */
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
-   
-
+    // use toLowerCase method and return result
+    return string.toLowerCase();
     // YOUR CODE ABOVE HERE //
 }
 
