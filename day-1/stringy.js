@@ -22,7 +22,7 @@
 
 function length(string) {
     // YOUR CODE BELOW HERE //
-    
+
     // return string length
     return string.length;
     
@@ -279,10 +279,23 @@ function sortAscending(stringOne, stringTwo) {
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
+
+/**
+ * I: Two strings 
+ * O: 1 if the first string is earlier in the alphabet than the second, -1 if the second is higher than the first, and 0 if equal
+ * C: N/A
+ * E: N/A
+ */
+
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 
-
+    // If the first string is later in the alphabet return 1
+    // else if the second string is later return -1
+    // if they're equal return 0
+    return stringOne > stringTwo ? 1
+    : stringTwo > stringOne ? -1
+    : 0
 
 
     // YOUR CODE ABOVE HERE //
