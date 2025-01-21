@@ -120,13 +120,13 @@ function toDashCase(string) {
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
 
-    // Initialzing container variables for input parameters to match case
+    // Initialzing container variables for both input parameters to normalize case
     var globalStr = string.toLowerCase();
     var globalChar = char.toLowerCase();
     // Compare first letter of string to single character
     // If they match return true
     // else return false
-    return globalStr[0] === globalChar
+    return globalStr[0] === globalChar 
     ? true
     : false
     // YOUR CODE ABOVE HERE //

@@ -21,10 +21,20 @@
  *  b. you'll need a loop, which one is best?
  *  c. you'll wanna make use of the push() method of Array.
  */
+
+/**
+ * I: Two intergers
+ * O: an array containing all intergers between the two parameters, inclusively. if 
+ * first arugment is greater than the second, return the range in reverse order
+ * C:
+ * E:
+ * 
+ *  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
     
-    
+    // initialize a variable with empty array as a container for result
+    var rangeArr = [];
     
     
     // YOUR CODE GOES ABOVE HERE //
