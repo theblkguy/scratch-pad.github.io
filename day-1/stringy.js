@@ -119,8 +119,6 @@ function beginsWith(string, char) {
     return globalStr.charAt(0) === char 
     ? true
     : false
-    
-
     // YOUR CODE ABOVE HERE //
 }
 
