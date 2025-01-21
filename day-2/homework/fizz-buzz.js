@@ -10,9 +10,33 @@
  *  c. AND for the multiples of five print “Buzz”.
  *  d. FINALLY, for numbers which are multiples of both three and five print “FizzBuzz”.
 */
+
+/**
+ * I: Numbers 1 - 100
+ * O: Printing each number
+ * C: each multiple of 3 prints 'Fizz' instead of number, each multiple of 5 prints 'buzz'
+ * multiples of 3 AND 5 prints 'FizzBuzz'
+ * E:
+ */
 function fizzBuzz() {
     // YOUR CODE GOES BELOW HERE //
-
+    // Intitialzing a variable with 0 as a container
+    var n = 0;
+    // Initializing a while loop
+    while (n <= 100) {
+        if (n % 3 === 0 && n % 5 === 0) {
+            console.log('FizzBuzz')
+            n++
+        } else if (n % 3 === 0 && n % 5 ==! 0) {
+            console.log('Fizz')
+            n++
+        } else if (n % 5 === 0 && n % 3 ==! 0) {
+            console.log('Buzz')
+            n++
+        } else {
+            console.log(n);
+            n++
+        }
 
 
     // YOUR CODE GOES ABOVE HERE //
