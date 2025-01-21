@@ -109,14 +109,19 @@ function toDashCase(string) {
 
 /**
  * I: A string and a single character
- * O: return TRUE if string begins with character, false otherwise
+ * O: return TRUE if string begins with character, FALSE otherwise
  * C: Function is case insensitive
  * E: N/A
  */
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
+    // Initialzing container variables for input parameters to match case
     var globalStr = string.toLowerCase()
-    return globalStr.charAt(0) === char 
+    var globalChar = char.toLowerCase()
+    // Compare first letter of string to single character
+    // If they match return true
+    // else return false
+    return globalStr[0] === globalChar
     ? true
     : false
     // YOUR CODE ABOVE HERE //
