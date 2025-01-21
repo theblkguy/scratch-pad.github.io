@@ -26,19 +26,18 @@
  * E: N/A
  */
 function reverseString(input) {
-    // YOUR CODE GOES BELOW HERE //
+  // YOUR CODE GOES BELOW HERE //
     // Initialize a variable as an empty string to hold result of input reversed
-    var revStr = ''
+  var revStr = ''
     // Initialize a for loop to iterate through input string in reverse
-    for (let i = input.length; i <= 0; i--) {
-      revStr.concat(i)
-    }
-    return revStr
-    
-    // YOUR CODE GOES ABOVE HERE //
+  for (var i = input.length - 1; i >= 0; i--) {
+    // Add each letter at given index to container variable
+    revStr += input[i]
+  }
+  return revStr
+  
+  // YOUR CODE GOES ABOVE HERE //
 }
-console.log(reverseString("Jayden"))
-
 
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
