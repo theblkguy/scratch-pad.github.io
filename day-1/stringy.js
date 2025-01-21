@@ -90,7 +90,7 @@ function toDashCase(string) {
     // Initialize variable with string in dash-case
     var strDash = string.replace(/ /g, '-');
     // return new string in all lowercase
-    return strDash.toLowerCase()
+    return strDash.toLowerCase();
     // YOUR CODE ABOVE HERE //
 }
 
@@ -116,8 +116,8 @@ function toDashCase(string) {
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
     // Initialzing container variables for input parameters to match case
-    var globalStr = string.toLowerCase()
-    var globalChar = char.toLowerCase()
+    var globalStr = string.toLowerCase();
+    var globalChar = char.toLowerCase();
     // Compare first letter of string to single character
     // If they match return true
     // else return false
@@ -139,11 +139,24 @@ function beginsWith(string, char) {
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+
+/**
+ * I: A string and a single character
+ * O: return TRUE if string ends with character, FALSE otherwise
+ * C: Function is case insensitive
+ * E: N/A
+ */
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
-
-
+    // Initialzing container variables for input parameters to match case
+    var endStr = string.toLowerCase();
+    var endChar = char.toLowerCase();
+    // Compare last letter of string to single character
+    // If they match return true
+    // else return false
+    return endStr[endStr.length - 1] === endChar
+    ? true
+    : false
     // YOUR CODE ABOVE HERE //
 }
 
@@ -152,9 +165,17 @@ function endsWith(string, char) {
  *
  * TIP: What's the operator to concatenate two Strings?
  */
+
+/**
+ * I: Two strings
+ * O: The two given strings concatenated into one
+ * C: N/A
+ * E: N/A
+ */
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+    // Concatenate the two strings and return the result
+    return stringOne += stringTwo;
 
 
     // YOUR CODE ABOVE HERE //
