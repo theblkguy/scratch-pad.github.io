@@ -18,20 +18,24 @@
  * multiples of 3 AND 5 prints 'FizzBuzz'
  * E:
  */
+
 function fizzBuzz() {
     // YOUR CODE GOES BELOW HERE //
-    // Intitialzing a variable with 0 as a container
-    var n = 0;
-    // Initializing a while loop
-    while (n <= 100) {
-        if (n % 3 === 0 && n % 5 === 0) {
+
+    // initialize a for loop for numbers 1 - 100
+    for (var i = 1; i <= 100; i++) {
+        // if the remainder of i divided 15 is 0 print "FizzBuzz"
+        if (i % 15 === 0) {
             console.log('FizzBuzz')
-        } else if (n % 3 === 0 && n % 5 ==! 0) {
-            console.log('Fizz')
-        } else if (n % 5 === 0 && n % 3 ==! 0) {
+        // else if the remainder of i divided by 5 is 0 print 'Buzz'
+        } else if (i % 5 === 0) {
             console.log('Buzz')
+        // else if the remainder of i divided by 3 is 0 print 'Fizz'
+        } else if (i % 3 === 0) {
+            console.log('Fizz')
+        // otherwise, log i
         } else {
-            console.log(n);
+            console.log(i)
         }
     }
 

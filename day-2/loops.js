@@ -10,10 +10,25 @@
  * Given an input Array, loop forward over the Array and print its values 
  * using console.log().
  */
+
+/**
+ * I: An Array
+ * O: Array values printed to the console
+ * C: N/A
+ * E: N/A
+ */
+
 function printArrayValues(array) {
   // YOUR CODE BELOW HERE //
-  
-  
+
+    // initialize for loop
+    // start index at 0
+    // while the index is less than or equal to the array length
+    // iterate the index by 1
+  for (var i = 0; i <= array.length - 1; i++) {
+    // log current array index to console
+    console.log(array[i]);
+  }
   
   
   // YOUR CODE ABOVE HERE //
