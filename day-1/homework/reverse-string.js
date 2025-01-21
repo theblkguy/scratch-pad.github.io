@@ -27,13 +27,17 @@
  */
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
-    
+    // Initialize a variable as an empty string to hold result of input reversed
+    var revStr = ''
+    // Initialize a for loop to iterate through input string in reverse
+    for (let i = input.length; i <= 0; i--) {
+      revStr.concat(i)
+    }
+    return revStr
     
     // YOUR CODE GOES ABOVE HERE //
 }
-
+console.log(reverseString("Jayden"))
 
 
 
