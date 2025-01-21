@@ -33,9 +33,7 @@ function fizzBuzz() {
         } else {
             console.log(n);
         }
-        n++
     }
-
 
 
     // YOUR CODE GOES ABOVE HERE //
