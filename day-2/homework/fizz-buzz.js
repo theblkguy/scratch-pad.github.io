@@ -26,17 +26,16 @@ function fizzBuzz() {
     while (n <= 100) {
         if (n % 3 === 0 && n % 5 === 0) {
             console.log('FizzBuzz')
-            n++
         } else if (n % 3 === 0 && n % 5 ==! 0) {
             console.log('Fizz')
-            n++
         } else if (n % 5 === 0 && n % 3 ==! 0) {
             console.log('Buzz')
-            n++
         } else {
             console.log(n);
-            n++
         }
+        n++
+    }
+
 
 
     // YOUR CODE GOES ABOVE HERE //
