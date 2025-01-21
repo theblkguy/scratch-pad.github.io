@@ -22,6 +22,7 @@
 
 function length(string) {
     // YOUR CODE BELOW HERE //
+    
     // return string length
     return string.length;
     
@@ -42,6 +43,7 @@ function length(string) {
  */
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
+
     // use toLowerCase method and return result
     return string.toLowerCase();
     // YOUR CODE ABOVE HERE //
@@ -59,6 +61,7 @@ function toLowerCase(string) {
  */
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
+
      // use toUpperCase method and return result
      return string.toUpperCase();
 
@@ -87,6 +90,7 @@ function toUpperCase(string) {
  */
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
+
     // Initialize variable with string in dash-case
     var strDash = string.replace(/ /g, '-');
     // return new string in all lowercase
@@ -115,6 +119,7 @@ function toDashCase(string) {
  */
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
+
     // Initialzing container variables for input parameters to match case
     var globalStr = string.toLowerCase();
     var globalChar = char.toLowerCase();
@@ -148,6 +153,7 @@ function beginsWith(string, char) {
  */
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
+
     // Initialzing container variables for input parameters to match case
     var endStr = string.toLowerCase();
     var endChar = char.toLowerCase();
@@ -174,6 +180,7 @@ function endsWith(string, char) {
  */
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+
     // Concatenate the two strings and return the result
     return stringOne += stringTwo;
 
@@ -200,6 +207,7 @@ function concat(stringOne, stringTwo) {
  */
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+
     var args = Array.from(arguments);
     // Use join method on arguments and return the result
     return args.join('');
@@ -225,6 +233,7 @@ function join(stringOne, stringTwo) {
  * */
 function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+
     // If the first string is longer than the second, return the first string
     // else, return the second string
     return stringOne.length > stringTwo.length
@@ -242,8 +251,22 @@ function longest(stringOne, stringTwo) {
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
+
+/**
+ * I: Two strings 
+ * O: 1 if the first string is earlier in the alphabet than the second, -1 if the second is higher than the first, and 0 if equal
+ * C: N/A
+ * E: N/A
+ */
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+
+    // If the first string is earlier in the alphabet return 1
+    // else if the second string is earlier return -1
+    // if they're equal return 0
+    return stringOne < stringTwo ? 1
+    : stringTwo < stringOne ? -1
+    : 0
 
     // YOUR CODE ABOVE HERE //
 }
