@@ -46,4 +46,5 @@ As you code your solutions and save your work, you have four options for checkin
 
 If you want to see an actual web page, you should run an `.html` file. Anything with the suffix `.html` is going to be HTML, or Hypertext Markup Language. HTML is like the skeleton of a website, it is the structure, so when you want to see a visualization of something you use HTML. It's possible for HTML to access your JavaScript files and run them inside the website, which we will play with more later in the course.
 
+testing
 ---
