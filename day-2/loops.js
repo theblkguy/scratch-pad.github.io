@@ -90,9 +90,24 @@ return keysArr;
  * Given an input Object, loop over the Object and print its keys 
  * using console.log().
  */
+
+/**
+ * I: An object containing values 
+ * O: Object keys printed to the console
+ * C: N/A
+ * E: N/A
+ * */
+
+
+
 function printObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-  
+
+    // Iterate through object
+  for (var key in object){
+    // print each key to console
+    console.log(key)
+  }
   
   
   
@@ -102,9 +117,24 @@ function printObjectKeys(object) {
 /** 
  * Given an input Object, return an Array containing the Object's values.
  */
+
+/**
+ * I: An object
+ * O: An array containing values from the object
+ * C:
+ * E: 
+ * */
 function getObjectValues(object) {
   // YOUR CODE BELOW HERE //
-  
+    // initialize a container variable with array literal
+    var output = [];
+    // iterate through object
+  for (var key in object){
+    // push each value into the array
+    output.push(object[key])
+  }
+    //return output array
+return output
   
   
   
@@ -115,9 +145,22 @@ function getObjectValues(object) {
  * Given an input Object, loop over the Object and print its values 
  * using console.log().
  */
+
+/**
+ * I: An Object
+ * O: Object values printed to console
+ * C:
+ * E:
+ */
+
 function printObjectValues(object) {
   // YOUR CODE BELOW HERE //
-  
+    
+    // loop through the object
+  for (var key in object) {
+    // log the keys of object to console
+    console.log(object[key])
+  }
   
   
   
@@ -127,10 +170,27 @@ function printObjectValues(object) {
 /** 
  * Given an input Object, return the number of key/value pairs stored within that Object.
  */
+
+/**
+ * I: An object
+ * O: The NUMBER of key/value pairs in the given object
+ * C:
+ * E:
+ *
+ */
+
 function getObjectLength(object) {
   // YOUR CODE BELOW HERE //
-  
-  
+
+    // initializing a variable with array literal
+    var countArr = []
+    // looping over object
+    for (var key in object) {
+    // push keys to container array
+      countArr.push(key)
+    }
+    // Return the length of the container array
+  return countArr.length
   
   
   // YOUR CODE ABOVE HERE //
