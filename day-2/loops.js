@@ -64,10 +64,25 @@ function printArrayValuesInReverse(array) {
 /** 
  * Given an input Object, return an Array containing the Object keys.
  */
+
+/**
+ * I: An object containing values 
+ * O: An array containing the object kets
+ * C: N/A
+ * E: N/A
+ * */
 function getObjectKeys(object) {
   // YOUR CODE BELOW HERE //
 
-
+    // Initializing a container variable with array literal
+    var keysArr = [];
+    // Iterating over the keys in the object
+  for (var key in object) {
+    // Push keys to container array
+    keysArr.push(key)
+  }
+    // return new array containing object keys
+return keysArr;
   // YOUR CODE ABOVE HERE //
 }
 
