@@ -200,10 +200,25 @@ function getObjectLength(object) {
  * Given an input Object, how might we loop over the Object IN REVERSE and 
  * print its values using console.log()?
  */
+
+/**
+ * I: an Object
+ * O: The values of the object printed in reverse
+ * C:
+ * E: 
+ * */
 function printObjectValuesInReverse(object) {
   // YOUR CODE BELOW HERE //
-  
-  
+
+    // Initialize a variable with array literal
+    var refArr = [];
+    // Loop through the object
+    for (var key in object) {
+      // unshift values into container array
+      refArr.unshift(object[key])
+    }
+    // Loop through container array
+    for (var)
   
   
   // YOUR CODE ABOVE HERE //
