@@ -218,8 +218,10 @@ function printObjectValuesInReverse(object) {
       refArr.unshift(object[key])
     }
     // Loop through container array
-    for (var)
-  
+    for (var i = 0; i < refArr.length; i++){
+    // print container array values to console
+      console.log(refArr[i])
+    }
   
   // YOUR CODE ABOVE HERE //
 }
