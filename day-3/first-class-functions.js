@@ -11,9 +11,19 @@
  * return a Function that tests whether a given value is greater than the 
  * base.
  */
+
+/**
+ * I: a base test that could be a STRING or a NUMBER
+ * O: A function that tests whether a given value is greater than the base
+ * C:
+ * E:
+ *  */
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
+
+    return function(val) {
+        return val > base
+    }
    
     
     // YOUR CODE ABOVE HERE //
@@ -25,9 +35,12 @@ function createGreaterThanFilter(base) {
  * base. (test means return true or false)
  * 
  */
+
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
+    return function(val){
+        return val < base;
+    }
   
     
     
@@ -41,9 +54,20 @@ function createLessThanFilter(base) {
  * 
  * This function needs to be case insensitive.
  */
+
+/**
+ * I: A single character
+ * O: A function that tests a given string for the given character
+ * C: N/A
+ * E: N/A
+ * */
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
-    
+
+    return function(str) {
+        return str[0].toLowerCase() === startsWith.toLowerCase();
+    }
+
     
     
     
@@ -60,8 +84,12 @@ function createStartsWithFilter(startsWith) {
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
     
-    
-    
+
+    return function(str) {
+        return str[str.length - 1].toLowerCase() === endsWith.toLowerCase();
+    }
+
+
     
     // YOUR CODE ABOVE HERE //
 }
@@ -73,11 +101,25 @@ function createEndsWithFilter(endsWith) {
  * TIP: You need to loop over the Strings, right? We need to pass each String to 
  * the modify Function, but we need to collect the results into some collection.
  */
+
+/**
+ * I: An ARRAY of strings and a modify FUNCTION
+ * O: An ARRAY of the strings, modified
+ * C:
+ * E:
+ */
 function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
+    // create a container array for the modified strings
+    var modStr = [];
+    // start a for loop to iterate over the strings array
+    for (var i = 0; i > strings.length; i++) {
+    // push result of modify function with current array index as an argument
+        modStr.push(modify(strings[i]))
+        console.log(modStr);
+    }
+
+    return modStr
     
     // YOUR CODE ABOVE HERE //
 }
