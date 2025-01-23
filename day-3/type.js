@@ -14,9 +14,19 @@
  * 
  * HINT: There is a method that can help with this.
  */
+
+/**
+ * I: An input value
+ * O: If the value is an array return true
+ * C: N/A
+ * E: N/A
+ *  
+ * */
 function isArray(value) {
     // YOUR CODE BELOW HERE //
-    
+
+    // Check if value is an array and return result
+    return Array.isArray(value)
     
     
     
