@@ -113,7 +113,7 @@ function modifyStrings(strings, modify) {
     // create a container array for the modified strings
     var modStr = [];
     // start a for loop to iterate over the strings array
-    for (var i = 0; i > strings.length; i++) {
+    for (var i = 0; i < strings.length; i++) {
     // push result of modify function with current array index as an argument
         modStr.push(modify(strings[i]))
         console.log(modStr);
