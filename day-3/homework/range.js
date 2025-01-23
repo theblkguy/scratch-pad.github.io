@@ -35,7 +35,19 @@ function range(start, end) {
     
     // initialize a variable with empty array as a container for result
     var rangeArr = [];
+    if (start < end) {
+        while (start <= end) {
+            rangeArr.push(start)
+            start++
+        }
+    } else if (start > end) {
+        while (start >= end) {
+            rangeArr.push(start)
+            start--
+        }
+    }
     
+    return rangeArr
     
     // YOUR CODE GOES ABOVE HERE //
 }
