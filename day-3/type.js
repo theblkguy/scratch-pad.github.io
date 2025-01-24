@@ -46,12 +46,36 @@ function isArray(value) {
  * HINT: look up how to figure out if something is an instance of the Date object.
  * 
  */
+
+/**
+ * I: An input value
+ * O: Return true if given value is an OBJECT as a collection, false otherwise
+ * C: N/A
+ * E: N/A
+ * 
+ * */
+
 function isObject(value) {
     // YOUR CODE BELOW HERE //
-    
+    var result = null;
 
+    if(Array.isArray(value)) {
+        result = false;  
+    } 
     
-    
+    if(value === null) {
+        result = false
+    } 
+
+    if(value instanceof Date) {
+        result = false
+    } 
+
+    if(typeof value === 'object') {
+        result = true
+    } 
+
+    return result
     
     // YOUR CODE ABOVE HERE //
 }
