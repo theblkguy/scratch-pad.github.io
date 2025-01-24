@@ -33,7 +33,7 @@ function isArray(value) {
     // YOUR CODE ABOVE HERE //
 }
 
-
+    var arrTest = isArray()
 
 /** 
  * Given an input value, return true if the value is an Object intended as a 
@@ -72,7 +72,7 @@ function isObject(value) {
     // YOUR CODE ABOVE HERE //
 }
 
-
+var objTest = isObject()
 
 /** 
  * Given an input value, return true if is either an Array or an an Object 
@@ -125,10 +125,42 @@ function isCollection(value) {
  *    typeOf("javascript") -> "string"
  *    typeOf([1,2,3]) -> "array"
  */ 
+
+/**
+ * I: A value
+ * O: return the type of value as a string
+ * C:
+ * E: 
+ * */
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
-    
-    
+
+    var result = '';
+
+    if (typeof value === 'string'){
+        result = 'string';
+    } else if (isArray(value) === true) {
+        result = 'array';
+    } else if (isObject === true) {
+        result = 'object';
+    } else if (typeof value === 'undefined') {
+        result = 'undefined';
+    } else if (typeof value === 'number') {
+        result = 'number';
+    } else if (typeof value === 'number') {
+        result = 'number';
+    } else if (typeof value === 'boolean') {
+        result = 'boolean';
+    } else if (isObject(value) === false && typeof value === 'object' && value instanceof Date === false) {
+        result = 'null';
+    } else if (typeof value === 'function') {
+        result = 'function';
+    } else if (value instanceof Date === true) {
+        result = 'date';
+    }
+
+    return result
+
     
     
     // YOUR CODE ABOVE HERE //
