@@ -136,11 +136,34 @@ function modifyStrings(strings, modify) {
  * 
  * TIP: You need to loop over the Strings, right? And pass them to the test?
  */
+
+/**
+ * I: an ARRAY of strings and a FUNCTION to test the string, 
+ * O: return true or false 
+ * C: return true if ALL strings pass
+ * E: N/A.
+ * 
+ * .
+ * 
+ * */
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
+
+    // Initialize a container for boolean result
+    var result = null
+
+    // start a loop to iterate through the array
+    for (var i = 0; i < strings.length - 1; i++) {
+        // if the current index of the test passes the test reassign result to true
+        if (test(strings[i]) === true) {
+            result = true
+            // otherwise, reassign result to false
+        } else {
+            result = false
+        }
+    }
+    // return result
+    return result
     
     // YOUR CODE ABOVE HERE //
 }
