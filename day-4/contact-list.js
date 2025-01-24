@@ -78,10 +78,15 @@ function makeContactList() {
        E: N/A
        */
       findContact: function(fullName){
-        
+        var firstLast = fullName.split(' ')
+        for (var i = 0; contacts.length; i++) {
+
+        }
+
+        }
       }
 }
-}
+
 
 makeContactList(); // => { length: function(){}, addContact: function(){}, findContact: function(){}  }
 
