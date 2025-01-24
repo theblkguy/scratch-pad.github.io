@@ -141,7 +141,7 @@ function typeOf(value) {
         result = 'string';
     } else if (isArray(value) === true) {
         result = 'array';
-    } else if (isObject === true) {
+    } else if (isObject(value) === true) {
         result = 'object';
     } else if (typeof value === 'undefined') {
         result = 'undefined';

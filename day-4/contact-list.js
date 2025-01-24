@@ -33,13 +33,24 @@
  *          new-line character added after it!
  */
 
+/**
+ * I: ID, first name, last name
+ * O: a contact object containing given arguments
+ * C: N/A
+ * E: N/A
+ * */
 // YOUR CODE GOES BELOW HERE //
 function makeContact(id, nameFirst, nameLast) {
-    
-} 
+    // Initialize container variable with object literal
+    var contact = {};
+    contact['id'] = id;
+    contact['nameFirst'] = nameFirst;
+    contact['nameLast'] = nameLast;
 
+    return contact
+}
 
-
+   
 function makeContactList() {
     /*
      * You need something here to hold contacts. See length api for a hint:
