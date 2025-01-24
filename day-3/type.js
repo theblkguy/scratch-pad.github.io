@@ -82,7 +82,24 @@ function isObject(value) {
  */
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
-    
+    var result
+
+    if (!Array.isArray(value) 
+    && (value !== null) 
+    && (value instanceof Date === false) 
+    && (typeof value === 'object') || 
+    (Array.isArray(value) 
+    && (value !== null) 
+    && (value instanceof Date === false) 
+    && (typeof value === 'object'))
+    ) {
+        result = true
+
+    } else {
+        result = false
+    }
+
+    return result   
     
     
     
