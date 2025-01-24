@@ -80,12 +80,21 @@ function makeContactList() {
       findContact: function(fullName){
         var firstLast = fullName.split(' ')
         for (var i = 0; contacts.length; i++) {
-
+          if(contacts[i]['nameFirst'].includes(firstLast[0]) && contacts[i]['nameLast'].includes(firstLast[1])){
+            return contacts[i]
+          } else {
+            return undefined
+          }
         }
 
         }
       }
-}
+    }
+  
+
+  
+      
+
 
 
 makeContactList(); // => { length: function(){}, addContact: function(){}, findContact: function(){}  }
