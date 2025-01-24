@@ -57,26 +57,18 @@ function isArray(value) {
 
 function isObject(value) {
     // YOUR CODE BELOW HERE //
-    var result = null;
+    var result
 
-    if(Array.isArray(value)) {
-        result = false;  
-    } 
-    
-    if(value === null) {
-        result = false
-    } 
-
-    if(value instanceof Date) {
-        result = false
-    } 
-
-    if(typeof value === 'object') {
+    if (!Array.isArray(value) 
+    && (value !== null) 
+    && (value instanceof Date === false) 
+    && (typeof value === 'object')) {
         result = true
-    } 
+    } else {
+        result = false
+    }
 
-    return result
-    
+    return result 
     // YOUR CODE ABOVE HERE //
 }
 
