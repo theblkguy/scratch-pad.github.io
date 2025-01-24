@@ -62,8 +62,25 @@ function makeContactList() {
        length: function(){
         return contacts.length
        },
-       
-    }
+       /*
+       I: Takes in contact object
+       O: Add object to contact list
+       C: N/A
+       E: N/A
+       */
+      addContact: function(contact){
+        return contacts.push(contact)
+    },
+     /*
+       I: Takes in a full-name string
+       O: returns the contact if found in contact-list, else return undefined
+       C: N/A
+       E: N/A
+       */
+      findContact: function(fullName){
+        
+      }
+}
 }
 
 makeContactList(); // => { length: function(){}, addContact: function(){}, findContact: function(){}  }
