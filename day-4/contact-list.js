@@ -87,6 +87,9 @@ function makeContactList() {
           }
         }
 
+        },
+        removeContact: function(contact){
+          return delete contacts[contact]
         }
       }
     }

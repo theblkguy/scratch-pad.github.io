@@ -151,7 +151,9 @@ function typeOf(value) {
         result = 'number';
     } else if (typeof value === 'boolean') {
         result = 'boolean';
-    } else if (isObject(value) === false && typeof value === 'object' && value instanceof Date === false) {
+    } else if (isObject(value) === false 
+            && typeof value === 'object' 
+            && value instanceof Date === false) {
         result = 'null';
     } else if (typeof value === 'function') {
         result = 'function';
