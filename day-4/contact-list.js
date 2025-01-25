@@ -79,9 +79,9 @@ function makeContactList() {
        */
       findContact: function(fullName){
         var firstLast = fullName.split(' ')
-        for (var i = 0; contacts.length; i++) {
+        for (var i = 0; i < contacts.length; i++) {
           if(contacts[i]['nameFirst'].includes(firstLast[0]) && contacts[i]['nameLast'].includes(firstLast[1])){
-            return contacts[i]
+            return contacts[i];
           } else {
             return undefined
           }
@@ -89,10 +89,18 @@ function makeContactList() {
 
         },
         removeContact: function(contact){
-          return delete contacts[contact]
-        }
+          for (var i = 0; i < contacts.length; i++) {
+            if (contact.includes(contacts[i]['nameFirst'] && contact.includes(contacts[i]['nameLast'] && contact.includes(contacts[i[id]])))) {
+              return contacts.splice(contacts[i])
+            } else {
+              return undefined
+            }
+          }
       }
     }
+  }
+
+
   
 
   
