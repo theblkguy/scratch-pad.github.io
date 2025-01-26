@@ -83,22 +83,28 @@ function makeContactList() {
           if(contacts[i]['nameFirst'].includes(firstLast[0]) && contacts[i]['nameLast'].includes(firstLast[1])){
             return contacts[i];
           } else {
-            return undefined
+            return undefined;
           }
         }
 
         },
         removeContact: function(contact){
+          // initialize variable to hold contact as an array
+          var conMatch = Object.keys(contact)
+          console.log(conMatch)
+          // loop through the contacts array 
           for (var i = 0; i < contacts.length; i++) {
-            if (contact.includes(contacts[i]['nameFirst'] && contact.includes(contacts[i]['nameLast'] && contact.includes(contacts[i[id]])))) {
-              return contacts.splice(contacts[i])
-            } else {
-              return undefined
+            console.log(contacts[i].nameFirst)
+            console.log(conMatch[1])
+            console.log(conMatch[0] === contacts[i].id)
+              if (contacts[i].id.includes(conMatch[0]) && contacts[i].nameFirst.includes(conMatch[1]) && contacts[i].nameLast.includes(conMatch[3])) {
+                return contacts.splice(i, 1)
+              }
             }
           }
       }
     }
-  }
+
 
 
   
