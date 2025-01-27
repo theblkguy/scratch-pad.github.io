@@ -89,18 +89,19 @@ function makeContactList() {
 
         },
         removeContact: function(contact){
-          // initialize variable to hold contact as an array
-          var conMatch = Object.keys(contact)
-          console.log(conMatch)
+          // initialize container variable to hold contact values as an array
+          var conMatch = Object.values(contact)
+          console.log(conMatch[0], conMatch[1], conMatch[2])
           // loop through the contacts array 
           for (var i = 0; i < contacts.length; i++) {
-            console.log(contacts[i].nameFirst)
-            console.log(conMatch[1])
-            console.log(conMatch[0] === contacts[i].id)
-              if (contacts[i].id.includes(conMatch[0]) && contacts[i].nameFirst.includes(conMatch[1]) && contacts[i].nameLast.includes(conMatch[3])) {
+                // console.log(contacts[i].nameFirst === conMatch[1])
+                // console.log(conMatch.includes(contacts[i]['nameFirst']))
+          // if the contact object matches an object that already exists, delete the contact 
+              if (conMatch.includes(contacts[i]['id']) && conMatch.includes(contacts[i]['nameFirst']) && conMatch.includes(contacts[i]['nameLast'])) {
                 return contacts.splice(i, 1)
               }
             }
+        
           }
       }
     }
