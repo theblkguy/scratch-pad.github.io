@@ -107,11 +107,20 @@ function makeContactList() {
         
           },
           printAllContactNames: function() {
-         
+            //creat a container array for names
+            var allCon = [];
+            // loop through the contacts
+            for(var i = 0; i < contacts.length; i++) {
+              allCon.push(contacts[i]['nameFirst'] + ' ' + contacts[i]['nameLast'])
             }
+            return allCon.join('\n')
           }
+        }
       }
-
+    
+      
+    
+    
 
   
 
