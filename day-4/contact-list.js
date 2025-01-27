@@ -2,6 +2,8 @@
 
 'use strict';
 
+const { forEach } = require("lodash");
+
 /**
  * 4: Contact List // Contacts
  * 
@@ -91,21 +93,24 @@ function makeContactList() {
         removeContact: function(contact){
           // initialize container variable to hold contact values as an array
           var conMatch = Object.values(contact)
-          console.log(conMatch[0], conMatch[1], conMatch[2])
+          // console.log(conMatch[0], conMatch[1], conMatch[2])
           // loop through the contacts array 
           for (var i = 0; i < contacts.length; i++) {
                 // console.log(contacts[i].nameFirst === conMatch[1])
                 // console.log(conMatch.includes(contacts[i]['nameFirst']))
+
           // if the contact object matches an object that already exists, delete the contact 
               if (conMatch.includes(contacts[i]['id']) && conMatch.includes(contacts[i]['nameFirst']) && conMatch.includes(contacts[i]['nameLast'])) {
                 return contacts.splice(i, 1)
               }
             }
         
+          },
+          printAllContactNames: function() {
+         
+            }
           }
       }
-    }
-
 
 
   
